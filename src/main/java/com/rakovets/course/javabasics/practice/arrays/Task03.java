@@ -2,11 +2,14 @@ package com.rakovets.course.javabasics.practice.arrays;
 
 import com.rakovets.course.javabasics.util.StandardInputTask;
 
+<<<<<<< HEAD
 import javax.naming.spi.DirStateFactory;
 import javax.xml.transform.Result;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+=======
+>>>>>>> e35675c... feat: add tasks for theme 'Arrays'
 /**
  * Разработать программу для электронного дневника:
  * которая работает с отметками по каждому предмету.
@@ -37,6 +40,7 @@ public class Task03 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+<<<<<<< HEAD
         double[] massSum = new double[marks.length];
         for (int i = 0; i < marks.length; i++) {
             int average = 0;
@@ -47,6 +51,9 @@ public class Task03 extends StandardInputTask {
             massSum[i] = promegytZnachenie;
         }
         return massSum;
+=======
+        return null;
+>>>>>>> e35675c... feat: add tasks for theme 'Arrays'
     }
 
     /**
@@ -59,6 +66,7 @@ public class Task03 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+<<<<<<< HEAD
 
         int[] massivMin = new int[marks.length];
         for (int i = 0; i < marks.length; i++) {
@@ -72,6 +80,9 @@ public class Task03 extends StandardInputTask {
         }
         return massivMin;
 
+=======
+        return null;
+>>>>>>> e35675c... feat: add tasks for theme 'Arrays'
     }
 
     /**
@@ -84,6 +95,7 @@ public class Task03 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+<<<<<<< HEAD
         int[] massivMax = new int[marks.length];
         for (int i = 0; i < marks.length; i++) {
             int  maxZnak = marks[i][0];
@@ -95,6 +107,9 @@ public class Task03 extends StandardInputTask {
             }
         }
         return massivMax;
+=======
+        return null;
+>>>>>>> e35675c... feat: add tasks for theme 'Arrays'
     }
 
     private static int[][] nextArray(int countDisciplines, int countSemesters) {

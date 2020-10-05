@@ -2,9 +2,12 @@ package com.rakovets.course.javabasics.practice.arrays;
 
 import com.rakovets.course.javabasics.util.StandardInputTask;
 
+<<<<<<< HEAD
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+=======
+>>>>>>> e35675c... feat: add tasks for theme 'Arrays'
 /**
  * Разработать программу для электронного дневника:
  * которая работает с отметками по всем предметам.
@@ -35,6 +38,7 @@ public class Task02 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+<<<<<<< HEAD
         double average = 0;
         double sum = 0;
         for(int i = 0; i<marks.length; i++) {
@@ -44,6 +48,9 @@ public class Task02 extends StandardInputTask {
             }
         }
         return new BigDecimal((double) average).setScale(2, RoundingMode.HALF_DOWN).doubleValue();
+=======
+        return 0.0;
+>>>>>>> e35675c... feat: add tasks for theme 'Arrays'
     }
 
     /**
@@ -56,6 +63,7 @@ public class Task02 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+<<<<<<< HEAD
         int minZnach = marks[0][0];
         for (int i = 0; i < marks.length; i++) {
             for(int j = 0; j < marks[i].length; j++) {
@@ -65,6 +73,9 @@ public class Task02 extends StandardInputTask {
             }
         }
         return minZnach;
+=======
+        return 0;
+>>>>>>> e35675c... feat: add tasks for theme 'Arrays'
     }
 
     /**
@@ -77,6 +88,7 @@ public class Task02 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+<<<<<<< HEAD
         int maxZnach = marks[0][0];
         for (int i = 0; i < marks.length; i++) {
             for(int j = 0; j < marks[i].length; j++) {
@@ -86,6 +98,9 @@ public class Task02 extends StandardInputTask {
             }
         }
         return maxZnach;
+=======
+        return 0;
+>>>>>>> e35675c... feat: add tasks for theme 'Arrays'
     }
 
     private static int[][] nextArray(int countDisciplines, int countSemesters) {

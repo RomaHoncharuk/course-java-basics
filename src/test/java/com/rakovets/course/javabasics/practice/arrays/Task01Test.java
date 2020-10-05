@@ -45,4 +45,8 @@ class Task01Test {
     void getMaxMarkTest(int[] marks, Map actual) {
         assertEquals(Task01.getMaxMark(marks), actual.get("max"));
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e35675c... feat: add tasks for theme 'Arrays'

@@ -2,10 +2,13 @@ package com.rakovets.course.javabasics.practice.arrays;
 
 import com.rakovets.course.javabasics.util.StandardInputTask;
 
+<<<<<<< HEAD
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
+=======
+>>>>>>> e35675c... feat: add tasks for theme 'Arrays'
 /**
  * Разработать программу для электронного дневника:
  * которая работает с отметками только по одному предмету
@@ -35,6 +38,7 @@ public class Task01 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+<<<<<<< HEAD
         double average = 0;
         if (marks.length > 0) {
             double sum = 0;
@@ -48,6 +52,11 @@ public class Task01 extends StandardInputTask {
     }
 
 
+=======
+        return 0.0;
+    }
+
+>>>>>>> e35675c... feat: add tasks for theme 'Arrays'
     /**
      * Возвращает минимальную отметку.
      *
@@ -58,6 +67,7 @@ public class Task01 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+<<<<<<< HEAD
         int minZnak = marks[0];
         for (int i = 0; i < marks.length; i++) {
             if (minZnak > marks[i]) {
@@ -65,6 +75,9 @@ public class Task01 extends StandardInputTask {
             }
         }
         return minZnak;
+=======
+        return 0;
+>>>>>>> e35675c... feat: add tasks for theme 'Arrays'
     }
 
     /**
@@ -77,6 +90,7 @@ public class Task01 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+<<<<<<< HEAD
         int maxZnak = marks[0];
         for (int i = 0; i < marks.length; i++) {
             if (maxZnak < marks[i]) {
@@ -85,6 +99,9 @@ public class Task01 extends StandardInputTask {
         }
         return maxZnak;
 
+=======
+        return 0;
+>>>>>>> e35675c... feat: add tasks for theme 'Arrays'
     }
 
     private static int[] nextArray(int countMarks) {
