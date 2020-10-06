@@ -29,5 +29,19 @@ public class Task06 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        int a = tanksKilledFirstPlayer * KILL_POINT;
+        int b = tanksKilledSecondPlayer * KILL_POINT;
+        int c = a + BONUS_POINT;
+        int d = b + BONUS_POINT;
+
+
+
+        if (a > b) {
+            System.out.println("Player 1: "+ c +". Player 2: "+ b);
+        }else if (a < b) {
+            System.out.println("Player 1: "+ a +". Player 2: "+ d);
+        }else {
+            System.out.println("Player 1: "+ a +". Player 2: "+ b);
+        }
     }
 }
