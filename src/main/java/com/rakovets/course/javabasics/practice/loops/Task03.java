@@ -1,5 +1,6 @@
 package com.rakovets.course.javabasics.practice.loops;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -26,7 +27,14 @@ public class Task03 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
-        for (double x = 1.0;)
+
+        for(int i=1;i<depositTerm+1;i++) {
+            depositAmount += (depositAmount * annualDepositPercent) / 100;
+        }
+        String firstResult = String.format(Locale.ROOT,"%.2f", depositAmount);
+
+            System.out.println(firstResult);
+
 
     }
 }
