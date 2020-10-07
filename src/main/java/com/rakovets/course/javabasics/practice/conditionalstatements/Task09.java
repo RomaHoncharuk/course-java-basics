@@ -25,5 +25,13 @@ public class Task09 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        int f = numberFloors;
+        int t = numberApartmentsPerFloor;
+        int c = apartmentNumber;
+        int z = (c - 1) / (f * t) + 1;
+        int b = ((c - 1) % (f * t) / t + 1);
+
+        System.out.println("Porch: "+ z +". Floor: "+ b);
+
     }
 }
