@@ -24,7 +24,7 @@ public class Task01 {
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
 
         for(int a = 1; a <= rows; ++a) {
-            System.out.print(a);
+            System.out.print(a + "\n");
         }
     }
 }
