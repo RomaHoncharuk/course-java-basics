@@ -28,8 +28,8 @@ public class Task03 {
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
 
-        for(int i=0;i<depositTerm+1;i++) {
-            depositAmount += (depositAmount * annualDepositPercent) / 100;
+        for(int i = 0;i < depositTerm; i++) {
+            depositAmount += (depositAmount * annualDepositPercent) / 100.0;
         }
         String firstResult = String.format(Locale.ROOT,"%.2f", depositAmount);
             System.out.println(firstResult);
