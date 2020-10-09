@@ -24,8 +24,8 @@ public class Task06 {
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
 
-        //String s = String.format("%,d", amount);
-        //System.out.println(s);
+        String s = String.format("%,d", amount);
+        System.out.println(s);
 
 
     }
