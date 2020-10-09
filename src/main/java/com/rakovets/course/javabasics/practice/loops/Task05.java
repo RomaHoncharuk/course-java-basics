@@ -27,28 +27,16 @@ public class Task05 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
-        //int i = 0;
-        //while (healthPoints > 0) {
-        //    healthPoints -= ((healthPoints * regenerationPercentFromCurrentHealth) / 100 - averageDamagePerHour);
-         //   i++;
-         //   if (healthPoints <= 0) {
-         //       System.out.println(i);
-        //    } else
-        //        System.out.println("-1");
-         //     break;
-
-        //}
-        double healthPointsdecrease = healthPoints;
+        double pointHit = healthPoints;
         int i = 0;
-        while (healthPointsdecrease > 0) {
-            double resultHpPerHour = (healthPointsdecrease * regenerationPercentFromCurrentHealth / 100.0) + healthPointsdecrease;
-            healthPointsdecrease = resultHpPerHour - averageDamagePerHour;
+        for (; pointHit > 0; ) {
+            pointHit += ((pointHit * regenerationPercentFromCurrentHealth) / 100 - averageDamagePerHour);
             i++;
-            if (healthPointsdecrease <= 0) {
-                System.out.println(i);
+            if (pointHit <= 0) {
+            System.out.println(i);
             } else if (i > 24) {
-                System.out.println("-1");
-                break;
+            System.out.println("-1");
+            break;
             }
         }
     }
