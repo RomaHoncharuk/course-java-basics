@@ -23,8 +23,11 @@ public class Task01 {
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
 
-        for(int a = 1; a <= rows; ++a) {
-            System.out.print(a + "\n");
+        for (int a = 1; a <= rows; a++){
+            if (a >= rows){
+                System.out.print(a);
+            } else
+                System.out.println(a);
         }
     }
 }
