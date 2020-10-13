@@ -60,7 +60,7 @@ public class Task03 extends StandardInputTask {
                 }
             }
         }
-        return null;
+        return  null;
     }
 
     /**
