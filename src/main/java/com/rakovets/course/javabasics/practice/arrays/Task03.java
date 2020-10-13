@@ -45,6 +45,21 @@ public class Task03 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        int minZnachenia = marks[0][0];
+
+        for (int i = 0; i < marks.length; i++) {
+            for (int j = 0; j < marks.length; j++) {
+                for (int m = 0; m < marks[i].length; m++) {
+
+                    if (minZnachenia < marks[i][m]) {
+                        minZnachenia = marks[i][m];
+
+                        if (minZnachenia < marks[j][m])
+                            minZnachenia = marks[j][m];
+                    }
+                }
+            }
+        }
         return null;
     }
 

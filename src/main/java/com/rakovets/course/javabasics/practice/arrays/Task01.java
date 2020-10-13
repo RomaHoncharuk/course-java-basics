@@ -2,6 +2,8 @@ package com.rakovets.course.javabasics.practice.arrays;
 
 import com.rakovets.course.javabasics.util.StandardInputTask;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
 /**
@@ -42,7 +44,7 @@ public class Task01 extends StandardInputTask {
             average = sum / marks.length;
 
         }
-        return average;
+        return new BigDecimal((double) average).setScale(2, RoundingMode.HALF_DOWN).doubleValue();
     }
 
 
