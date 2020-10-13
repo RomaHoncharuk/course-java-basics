@@ -2,6 +2,11 @@ package com.rakovets.course.javabasics.practice.arrays;
 
 import com.rakovets.course.javabasics.util.StandardInputTask;
 
+import javax.naming.spi.DirStateFactory;
+import javax.xml.transform.Result;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 /**
  * Разработать программу для электронного дневника:
  * которая работает с отметками по каждому предмету.
@@ -32,7 +37,16 @@ public class Task03 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
-        return null;
+        double[] massSum = new double[marks.length];
+        for (int i = 0; i < marks.length; i++) {
+            int average = 0;
+            for (int average2 : marks[i]) {
+                average += average2;
+            }
+            double promegytZnachenie = new BigDecimal((double) average / marks[i].length).setScale(2, RoundingMode.HALF_DOWN).doubleValue();
+            massSum[i] = promegytZnachenie;
+        }
+        return massSum;
     }
 
     /**
@@ -45,22 +59,19 @@ public class Task03 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
-        int minZnachenia = marks[0][0];
 
+        int[] massivMin = new int[marks.length];
         for (int i = 0; i < marks.length; i++) {
-            for (int j = 0; j < marks.length; j++) {
-                for (int m = 0; m < marks[i].length; m++) {
-
-                    if (minZnachenia < marks[i][m]) {
-                        minZnachenia = marks[i][m];
-
-                        if (minZnachenia < marks[j][m])
-                            minZnachenia = marks[j][m];
-                    }
+            int  minZnak = marks[i][0];
+            for (int j = 0; j < marks[i].length; j++) {
+                if (minZnak > marks[i][j] ) {
+                    minZnak = marks[i][j];
                 }
+                massivMin[i] = minZnak;
             }
         }
-        return  null;
+        return massivMin;
+
     }
 
     /**
@@ -73,7 +84,17 @@ public class Task03 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
-        return null;
+        int[] massivMax = new int[marks.length];
+        for (int i = 0; i < marks.length; i++) {
+            int  maxZnak = marks[i][0];
+            for (int j = 0; j < marks[i].length; j++) {
+                if (maxZnak < marks[i][j] ) {
+                    maxZnak = marks[i][j];
+                }
+                massivMax[i] = maxZnak;
+            }
+        }
+        return massivMax;
     }
 
     private static int[][] nextArray(int countDisciplines, int countSemesters) {
