@@ -2,6 +2,8 @@ package com.rakovets.course.javabasics.practice.arrays;
 
 import com.rakovets.course.javabasics.util.StandardInputTask;
 
+import java.text.DecimalFormat;
+
 /**
  * Разработать программу для электронного дневника:
  * которая работает с отметками только по одному предмету
@@ -31,9 +33,19 @@ public class Task01 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        double average = 0;
+        if (marks.length > 0) {
+            double sum = 0;
+            for (int j = 0; j < marks.length; j++) {
+                sum += marks[j];
+            }
+            average = sum / marks.length;
 
-        return 0.0;
+
+        }
+        return average;
     }
+
 
     /**
      * Возвращает минимальную отметку.
@@ -45,7 +57,13 @@ public class Task01 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
-        return 0;
+        int minZnak = marks[0];
+        for (int i = 0; i < marks.length; i++) {
+            if (minZnak > marks[i]) {
+                minZnak = marks[i];
+            }
+        }
+        return minZnak;
     }
 
     /**
@@ -58,7 +76,14 @@ public class Task01 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
-        return 0;
+        int maxZnak = marks[0];
+        for (int i = 0; i < marks.length; i++) {
+            if (maxZnak < marks[i]) {
+                maxZnak = marks[i];
+            }
+        }
+        return maxZnak;
+
     }
 
     private static int[] nextArray(int countMarks) {
