@@ -45,7 +45,15 @@ public class Task02 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
-        return 0;
+        int minZnach = marks[0][0];
+        for (int i = 0; i < marks.length; i++) {
+            for(int j = 0; j < marks[i].length; j++) {
+                if (minZnach > marks[i][j]) {
+                    minZnach = marks[i][j];
+                }
+            }
+        }
+        return minZnach;
     }
 
     /**
@@ -58,7 +66,15 @@ public class Task02 extends StandardInputTask {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
-        return 0;
+        int maxZnach = marks[0][0];
+        for (int i = 0; i < marks.length; i++) {
+            for(int j = 0; j < marks[i].length; j++) {
+                if (maxZnach < marks[i][j]) {
+                    maxZnach = marks[i][j];
+                }
+            }
+        }
+        return maxZnach;
     }
 
     private static int[][] nextArray(int countDisciplines, int countSemesters) {

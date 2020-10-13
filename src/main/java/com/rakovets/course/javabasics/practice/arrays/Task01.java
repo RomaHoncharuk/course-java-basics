@@ -41,7 +41,6 @@ public class Task01 extends StandardInputTask {
             }
             average = sum / marks.length;
 
-
         }
         return average;
     }
