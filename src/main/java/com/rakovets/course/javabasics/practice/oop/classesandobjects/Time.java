@@ -16,22 +16,28 @@ public class Time {
         this.seconds = seconds;
     }
     public int getHours() {
+
         return this.hours;
     }
     public void setHours() {
+
         this.hours = hours;
     }
     public int getMinutes() {
+
         return this.minutes;
     }
 
     public void setMinutes() {
+
         this.minutes = minutes;
     }
     public int getSeconds() {
+
         return this.minutes;
     }
     public void setSeconds() {
+
         this.seconds = seconds;
     }
     int getTotalSeconds() {

@@ -7,6 +7,8 @@ public class TestTime {
         vremia.setHours();
         vremia.getMinutes();
         vremia.getSeconds();
-        System.out.println("; TotalSecond - " + vremia.getTotalSeconds());
+
+        Time vremia2 = new Time(35, 35, 35);
+        System.out.print("TotalSecond - " + vremia2.getTotalSeconds());
     }
 }
