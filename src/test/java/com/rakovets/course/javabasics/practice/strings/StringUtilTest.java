@@ -32,4 +32,39 @@ public class StringUtilTest {
         Assertions.assertEquals(false, stringUtil.getCompareString("New_Door"));
         Assertions.assertEquals(true, stringUtil.getCompareString("NewDoor"));
     }
+
+    @Test
+    void gettrimLowString() {
+        StringUtil stringUtil = new StringUtil(" BlaBla ");
+        Assertions.assertEquals("blabla", stringUtil.trimLowString(" BlaBla "));
+        Assertions.assertEquals("xaxa", stringUtil.trimLowString("XaXA "));
+        Assertions.assertEquals("vot123aga", stringUtil.trimLowString("    VoT123aGa "));
+        Assertions.assertEquals("todo", stringUtil.trimLowString("todo"));
+        Assertions.assertEquals("xa-xa-xi", stringUtil.trimLowString("Xa-xA-XI       "));
+        Assertions.assertEquals("pyyyyk", stringUtil.trimLowString("       pYYYYk        "));
+    }
+
+    @Test
+    void subStringFormat() {
+        StringUtil stringUtil = new StringUtil("123456789abcdefghijklmnopqrstuvwxyz");
+        Assertions.assertEquals("abcdefghijklmnopqrstuvw", stringUtil.subStringFormat("123456789abcdefghijklmnopqrstuvwxyz"));
+        Assertions.assertEquals("abcdefghijklmnopqrs1234", stringUtil.subStringFormat("123456789abcdefghijklmnopqrs1234"));
+    }
+
+    @Test
+    void goSmile() {
+        StringUtil stringUtil = new StringUtil("My frend :) , or:( ?");
+        Assertions.assertEquals("My frend :) , or:) ?", stringUtil.goSmile("My frend :) , or:( ?"));
+        Assertions.assertEquals("Good day? no :::::)", stringUtil.goSmile("Good day? no :::::("));
+        Assertions.assertEquals("Hello :):):):):):)", stringUtil.goSmile("Hello :(:(:(:):(:("));
+        Assertions.assertEquals(":),:)", stringUtil.goSmile(":(,:("));
+    }
+    @Test
+    void startEndString() {
+        Assertions.assertEquals(true, startEndString("word good word"));
+
+
+
+    }
+
 }
