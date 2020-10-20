@@ -59,12 +59,27 @@ public class StringUtilTest {
         Assertions.assertEquals("Hello :):):):):):)", stringUtil.goSmile("Hello :(:(:(:):(:("));
         Assertions.assertEquals(":),:)", stringUtil.goSmile(":(,:("));
     }
+
     @Test
-    void startEndString() {
-        Assertions.assertEquals(true, startEndString("word good word"));
-
-
-
+    void getStartEndStr() {
+        StringUtil stringUtil = new StringUtil("word or word");
+        Assertions.assertEquals(true, stringUtil.getStartEndStr("word or word", "word"));
+        Assertions.assertEquals(true, stringUtil.getStartEndStr("wordor word", "word"));
+        Assertions.assertEquals(false, stringUtil.getStartEndStr("dorw ro dorw", "word"));
     }
 
+    @Test
+    void getHowLetter() {
+        StringUtil stringUtil = new StringUtil("Babaika");
+        Assertions.assertEquals(4, stringUtil.getHowLetter("Babaika"));
+        Assertions.assertEquals(3, stringUtil.getHowLetter("Andatra"));
+        Assertions.assertEquals(2, stringUtil.getHowLetter("goblin"));
+        Assertions.assertEquals(5, stringUtil.getHowLetter("SHMAKODOVILKA"));
+    }
+
+    @Test
+    void getHowSign() {
+        StringUtil stringUtil = new StringUtil("Ho, you? doing! Menn,,, you are....lose");
+        Assertions.assertEquals(9, stringUtil.getHowSign("Ho, you? doing! Menn,,, you are....lose"));
+    }
 }

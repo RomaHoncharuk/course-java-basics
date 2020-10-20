@@ -35,8 +35,33 @@ public class StringUtil {
         return str.replace("(", ")");
     }
 
-    public boolean startEndString(String str, String word) {
+    public boolean getStartEndStr(String str, String word) {
         return str.startsWith(word) && str.endsWith(word);
     }
 
+    public int getHowLetter(String str) {
+        int let = 0;
+        char[] array = new char[]{'a','i','o','O','A','I'};
+        for (char ch : str.toCharArray()) {
+            for (char ch2 : array) {
+                if (ch == ch2) {
+                let++;
+                }
+            }
+        }
+        return let;
+    }
+
+    public int getHowSign(String str) {
+        int sign = 0;
+        char[] array = new char[]{'.',',','!'};
+        for (char ch : str.toCharArray()) {
+            for (char ch2 : array) {
+                if (ch == ch2) {
+                    sign++;
+                }
+            }
+        }
+        return sign;
+    }
 }
