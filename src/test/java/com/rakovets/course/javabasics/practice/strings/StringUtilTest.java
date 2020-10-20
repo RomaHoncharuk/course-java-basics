@@ -81,5 +81,7 @@ public class StringUtilTest {
     void getHowSign() {
         StringUtil stringUtil = new StringUtil("Ho, you? doing! Menn,,, you are....lose");
         Assertions.assertEquals(9, stringUtil.getHowSign("Ho, you? doing! Menn,,, you are....lose"));
+        Assertions.assertEquals(15, stringUtil.getHowSign("!!!!pararra...i,,,,y!!!xixi!"));
+        Assertions.assertEquals(3, stringUtil.getHowSign(".,!;:'"));
     }
 }
