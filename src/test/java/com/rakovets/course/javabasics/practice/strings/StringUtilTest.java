@@ -93,4 +93,10 @@ public class StringUtilTest {
         Assertions.assertEquals(true, stringUtil.getPalindromEffekt("GunNug"));
         Assertions.assertEquals(false, stringUtil.getPalindromEffekt("bobbi"));
     }
+
+    @Test
+    void getArrey() {
+        StringUtil stringUtil = new StringUtil("abcdabcdabcd1");
+        Assertions.assertEquals(new String[]{"abc", "bcd", "cda", "dab", "abc"}, stringUtil.getArrey("abcdabcdabcd1",3));
+    }
 }

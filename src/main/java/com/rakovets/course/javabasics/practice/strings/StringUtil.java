@@ -69,4 +69,17 @@ public class StringUtil {
         StringBuffer stringBuffer = new StringBuffer(str);
         return stringBuffer.reverse().toString().equalsIgnoreCase(str);
     }
+
+    public String[] getArrey(String str, int n) {
+        int str1 = str.length() / n;
+        if (str.length() % n != 0); {
+            str1++;
+        }
+        String[] array = new String[str1];
+        int numb = 0;
+        for (int a = 0; a < str1; a++) {
+            array[a] = str.substring(a, a + n);
+        }
+        return array;
+    }
 }
