@@ -64,4 +64,9 @@ public class StringUtil {
         }
         return sign;
     }
+
+    public boolean getPalindromEffekt(String str) {
+        StringBuffer stringBuffer = new StringBuffer(str);
+        return stringBuffer.reverse().toString().equalsIgnoreCase(str);
+    }
 }

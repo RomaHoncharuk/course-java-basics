@@ -84,4 +84,13 @@ public class StringUtilTest {
         Assertions.assertEquals(15, stringUtil.getHowSign("!!!!pararra...i,,,,y!!!xixi!"));
         Assertions.assertEquals(3, stringUtil.getHowSign(".,!;:'"));
     }
+
+    @Test
+    void getPalindromEffekt() {
+        StringUtil stringUtil = new StringUtil("baraban");
+        Assertions.assertEquals(false, stringUtil.getPalindromEffekt("baraban"));
+        Assertions.assertEquals(true, stringUtil.getPalindromEffekt("SOS"));
+        Assertions.assertEquals(true, stringUtil.getPalindromEffekt("GunNug"));
+        Assertions.assertEquals(false, stringUtil.getPalindromEffekt("bobbi"));
+    }
 }
