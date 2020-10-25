@@ -18,7 +18,10 @@ public class Array <T> {
     private Object[] array;
 
     public void Array(int length) {
-        this.array = array;
+        this.array = new Object[length];
     }
+    public void key
+
+
 
 }
