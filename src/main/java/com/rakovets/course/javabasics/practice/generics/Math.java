@@ -68,22 +68,66 @@ public class Math {
             if (maxZnach > array[i]) {
                 maxZnach = array[i];
             }
-            return maxZnach;
+        }
+
+        return maxZnach;
     }
     public int MinArray(int[] array) {
-         int minZnach = array[0];
-         for (int i = 0; i < array.length; i++) {
-             if (minZnach < array[i]) {
-                 minZnach = array[i];
-             }
-             return minZnach;
-         }
+        int minZnach = array[0];
+        for (int i = 0; i < array.length; i++) {
+            if (minZnach < array[i]) {
+                minZnach = array[i];
+            }
+        }
+
+        return minZnach;
     }
 
-    public int[] SorrtArray(int[] array) {
+//  array[] arr = new int[]{ 3, 9, 5 };
+//  Sort(arr);
+//  Assert(Equals(arr[0], 3))
+//  Assert(Equals(arr[1], 5))
+//  Assert(Equals(arr[2], 9))
+    public void SortArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            int positionOfMin = i;
+            for (int j = positionOfMin + 1; j < array.length; j++) {
+                if (array[j] < array[positionOfMin]) {
+                    positionOfMin = j;
+                }
+            }
 
+            int tmp = array[i];
+            array[i] = array[positionOfMin];
+            array[positionOfMin] = tmp;
+        }
+
+        //return array;
+    }
+
+    public int binarySearch(int[] array, int num) {
+        return binarySearch(array, 0, array.length - 1, num);
+    }
+    private int binarySearch(int[] array, int left, int right, int num) {
+        if (left == right || left + 1 == right) {
+            if (array[left] == num) {
+                return left;
+            }
+            if (array[right] == num) {
+                return right;
+            }
+            return -1;
+        }
+        int middleIndex = (right + left) / 2;
+        int znachenie = array[middleIndex];
+        if (znachenie == num) {
+            return middleIndex;
+        }
+        if (znachenie < num) {
+            return binarySearch(array, middleIndex, right, num);
+        }else {
+            return binarySearch(array, left, middleIndex, num);
         }
 
     }
-
 }
