@@ -31,11 +31,14 @@ package com.rakovets.course.javabasics.practice.generics;
 import com.sun.jdi.connect.Connector;
 
 public class Math {
+
     public int Max(int a, int b, int c) {
+
         return Max(Max(a, b), c);
     }
 
     private int Max(int a, int b) {
+
         return java.lang.Math.max(a, b);
     }
 
@@ -59,11 +62,27 @@ public class Math {
         return sum / array.length;
     }
 
-    public int MinArray(int[] array){
-        return 0;
+    public int MaxArray(int[] array) {
+        int maxZnach = array[0];
+        for (int i = 0; i < array.length; i++) {
+            if (maxZnach > array[i]) {
+                maxZnach = array[i];
+            }
+            return maxZnach;
+    }
+    public int MinArray(int[] array) {
+         int minZnach = array[0];
+         for (int i = 0; i < array.length; i++) {
+             if (minZnach < array[i]) {
+                 minZnach = array[i];
+             }
+             return minZnach;
+         }
     }
 
     public int[] SorrtArray(int[] array) {
+
+        }
 
     }
 
