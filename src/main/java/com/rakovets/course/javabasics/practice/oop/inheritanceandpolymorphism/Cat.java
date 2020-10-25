@@ -8,13 +8,13 @@ public class Cat {
         this.name = name;
     }
 
-    public String mew() {
-
+    public String mew(Person person) {
+        person.changeHappiness(-100);
         return "mew";
     }
 
-    public String purr() {
-
+    public String purr(Person person) {
+        person.changeHappiness(100);
         return "myrr";
     }
 

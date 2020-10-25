@@ -6,12 +6,14 @@ public class Spxynx extends Cat {
     }
 
     @Override
-    public String mew() {
+    public String mew(Person person) {
+        person.changeHappiness(-400);
         return "maaaayyaa";
     }
 
     @Override
-    public String purr() {
+    public String purr(Person person) {
+        person.changeHappiness(400);
         return "grrrr";
     }
 }
