@@ -1,6 +1,6 @@
 package com.rakovets.course.javabasics.practice.oop.inheritanceandpolymorphism;
 
-import org.junit.jupiter.api.Assertions;
+import com.rakovets.course.javabasics.practice.oop.inheritanceandpolymorphism.cat.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,4 +1,7 @@
-package com.rakovets.course.javabasics.practice.oop.inheritanceandpolymorphism;
+package com.rakovets.course.javabasics.practice.oop.inheritanceandpolymorphism.cat;
+
+import com.rakovets.course.javabasics.practice.oop.inheritanceandpolymorphism.cat.Cat;
+import com.rakovets.course.javabasics.practice.oop.inheritanceandpolymorphism.cat.Person;
 
 public class Siamese extends Cat {
     public Siamese(String name) {
