@@ -1,7 +1,7 @@
 package com.rakovets.course.javabasics.practice.oop.inheritanceandpolymorphism.Hero;
 
 public class Mag extends Hero {
-    private Mag (String name) {
+    public Mag (String name) {
         super(name);
     }
     @Override

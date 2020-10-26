@@ -1,7 +1,7 @@
 package com.rakovets.course.javabasics.practice.oop.inheritanceandpolymorphism.Hero;
 
 public class Archer extends Hero {
-    private Archer(String name) {
+    public Archer(String name) {
         super (name);
     }
 

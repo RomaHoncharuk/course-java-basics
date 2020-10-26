@@ -1,7 +1,7 @@
 package com.rakovets.course.javabasics.practice.oop.inheritanceandpolymorphism.Hero;
 
 public class Warrior extends Hero {
-    private Warrior (String name) {
+    public Warrior (String name) {
         super(name);
     }
     @Override
