@@ -56,15 +56,23 @@ public class Array <T> {
         }
     }
 
-//    public void maxArray () {
-//        int minZnach = array[0];
-//        for (int i = 0; i < array.length; i++) {
-//            if (minZnach < array[i]) {
-//                minZnach = array[i];
-//            }
-//        }
-//
-//        return minZnach;
-//
-//    }
+    public String arrayToString() {
+        String s = "";
+        for (int i = 0; i < array.length; i++) {
+            s = s + array[i];
+        }
+        return s;
+    }
+
+    public void maxArray () {
+        int minZnach = array[0];
+        for (int i = 0; i < array.length; i++) {
+            if (minZnach < array[i]) {
+                minZnach = array[i];
+            }
+        }
+
+        return minZnach;
+
+    }
 }
