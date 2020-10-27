@@ -14,13 +14,23 @@ package com.rakovets.course.javabasics.practice.generics;
 //        * поиск значения в массиве, используя бинарный поиск
 //        * замена значения в массиве на новое значение
 
+import java.util.Scanner;
+
 public class Array <T> {
     private Object[] array;
 
     public void Array(int length) {
         this.array = new Object[length];
     }
-    public void key
+    public void keyNum() {
+        Scanner input = new Scanner(System.in);
+        int size = input.nextInt();
+        int array[] = new int[size];
+        for (int i = 0; i < size; i++) {
+            array[i] = input.nextInt();
+        }
+
+    }
 
 
 

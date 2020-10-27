@@ -54,11 +54,6 @@ public class Math {
         return minZnach;
     }
 
-//  array[] arr = new int[]{ 3, 9, 5 };
-//  Sort(arr);
-//  Assert(Equals(arr[0], 3))
-//  Assert(Equals(arr[1], 5))
-//  Assert(Equals(arr[2], 9))
     public void SortArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             int positionOfMin = i;
