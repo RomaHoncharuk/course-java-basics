@@ -21,14 +21,13 @@ public class Math {
         return Min(Min(Min(Min(a, b), c), d), z);
     }
 
-    public float Avg(int[][] array) {
+    public float Avg(int[] array) {
         if (array == null) {
             throw new IllegalArgumentException("Array should be not null");
         }
         long sum = 0;
         for(int i = 0; i < array.length; i++) {
-            for(int j = 0; j < array[i].length; j++)
-            sum += array[i][j];
+            sum += array[i];
         }
         return sum / array.length;
     }
@@ -36,7 +35,7 @@ public class Math {
     public int MaxArray(int[] array) {
         int maxZnach = array[0];
         for (int i = 0; i < array.length; i++) {
-            if (maxZnach > array[i]) {
+            if (maxZnach < array[i]) {
                 maxZnach = array[i];
             }
         }
@@ -46,7 +45,7 @@ public class Math {
     public int MinArray(int[] array) {
         int minZnach = array[0];
         for (int i = 0; i < array.length; i++) {
-            if (minZnach < array[i]) {
+            if (minZnach > array[i]) {
                 minZnach = array[i];
             }
         }
