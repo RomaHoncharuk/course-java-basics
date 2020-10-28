@@ -14,14 +14,20 @@ package com.rakovets.course.javabasics.practice.generics;
 //        * поиск значения в массиве, используя бинарный поиск
 //        * замена значения в массиве на новое значение
 
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Array <T> {
-    private Object[] array;
+public class Array <T extends Comparable<T>> {
+    private ArrayList<T> innerArray;
 
-    public Array(int length) {
-        this.array = new Object[length];
+    public Array() {
+        this.innerArray = new ArrayList<T>();
+    }
+
+    public void SetItem(T item) {
+        this.innerArray.add(item);
+
     }
     public void keyNum() {
         Scanner input = new Scanner(System.in);
@@ -50,29 +56,30 @@ public class Array <T> {
         }
     }
 
-    public void displayArray() {
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]);
-        }
-    }
-
-    public String arrayToString() {
-        String s = "";
-        for (int i = 0; i < array.length; i++) {
-            s = s + array[i];
-        }
-        return s;
-    }
-
-//    public void maxArray () {
-//        int minZnach = array[0];
-//        for (int i = 0; i < array.length; i++) {
-//            if (minZnach < array[i]) {
-//                minZnach = array[i];
-//            }
+//    public T displayArray() {
+//        T s = this.innerArray.get(0);
+//        for (int i = 1; i < this.innerArray.size(); i++) {
+//            s = s + this.innerArray.get(i);
 //        }
-//
-//        return minZnach;
-//
 //    }
+
+//    public String arrayToString() {
+//        String s = "";
+//        for (int i = 0; i < array.length; i++) {
+//            s = s + array[i];
+//        }
+//        return s;
+//    }
+
+    public T FindMin() {
+        T current = this.innerArray.get(0);
+        for(int i = 1; i < this.innerArray.size(); i++) {
+            if (this.innerArray.get(i).compareTo(current) < 0) {
+                current = this.innerArray.get(i);
+            }
+        }
+        return current;
+    }
+
+
 }
