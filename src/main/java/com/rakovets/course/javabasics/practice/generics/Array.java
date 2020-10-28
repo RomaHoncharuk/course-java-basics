@@ -18,10 +18,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Array <T> {
-    private Object[] array;
+    private T[] array;
 
     public Array(int length) {
-        this.array = new Object[length];
+        this.array = new T[length];
     }
     public void keyNum() {
         Scanner input = new Scanner(System.in);

@@ -53,7 +53,7 @@ public class Math {
         return minZnach;
     }
 
-    public void SortArray(int[] array) {
+    public int[] SortArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             int positionOfMin = i;
             for (int j = positionOfMin + 1; j < array.length; j++) {
@@ -67,7 +67,7 @@ public class Math {
             array[positionOfMin] = tmp;
         }
 
-         //return array;
+         return array;
     }
 
     public int binarySearch(int[] array, int num) {

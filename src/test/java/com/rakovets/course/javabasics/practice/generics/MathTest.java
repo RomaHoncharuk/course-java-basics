@@ -53,7 +53,16 @@ public class MathTest {
         Assertions.assertEquals(4, per);
      }
 
-    @Test
+     @Test
+     public int[] SortArray () {
+        int[] array = {4, 6, 1, 4, 8, 3, 9};
+        Math bin = new Math();
+        int[] per = bin.SortArray(array);
+        Assertions.assertEquals(1, array);
+
+     }
+
+     @Test
     public void binarySearch() {
         int[] array = {1, 2, 3, 4, 5};
         int num = 4;
