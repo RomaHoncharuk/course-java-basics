@@ -10,6 +10,9 @@ public class MathTest {
         int a = 1;
         int b = 2;
         int c = 3;
+        Math bin = new Math();
+        int per = bin.Max(a, b , c);
+        Assertions.assertEquals(3,per);
 
     }
 
