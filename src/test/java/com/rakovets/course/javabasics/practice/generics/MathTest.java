@@ -54,11 +54,12 @@ public class MathTest {
      }
 
      @Test
-     public int[] SortArray () {
+     public void SortArray () {
+        int[] array1 = {1, 3, 4, 4, 6, 8, 9};
         int[] array = {4, 6, 1, 4, 8, 3, 9};
         Math bin = new Math();
         int[] per = bin.SortArray(array);
-        Assertions.assertEquals(1, array);
+        Assertions.assertEquals(array1, array);
 
      }
 
