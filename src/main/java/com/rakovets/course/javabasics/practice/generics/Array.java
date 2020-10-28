@@ -71,11 +71,23 @@ public class Array <T extends Comparable<T>> {
 //        return s;
 //    }
 
-    public T FindMin() {
+    public T findMin() {
         T current = this.innerArray.get(0);
         for(int i = 1; i < this.innerArray.size(); i++) {
             if (this.innerArray.get(i).compareTo(current) < 0) {
                 current = this.innerArray.get(i);
+
+            }
+        }
+        return current;
+    }
+
+    public T findMax() {
+        T current = this.innerArray.get(0);
+        for(int i = 1; i < this.innerArray.size(); i++) {
+            if (this.innerArray.get(i).compareTo(current) > 0) {
+                current = this.innerArray.get(i);
+
             }
         }
         return current;

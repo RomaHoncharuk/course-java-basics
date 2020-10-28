@@ -8,12 +8,16 @@ import java.util.Scanner;
 public class ArrayTest {
 
     @Test
+    public void keyNum() {
+    }
+
+    @Test
     public void numRandomArray() {
     }
 
 
     @Test
-    public void FindMin() {
+    public void findMin() {
         Array<Integer> myCollection = new Array<Integer>();
         myCollection.SetItem(10);
         myCollection.SetItem(7);
@@ -21,7 +25,19 @@ public class ArrayTest {
         myCollection.SetItem(9);
         myCollection.SetItem(1);
         myCollection.SetItem(2);
-        Assertions.assertEquals(1, myCollection);
+        System.out.printf("current");
+    }
+
+    @Test
+    public void findMax() {
+        Array<Integer> myCollection = new Array<Integer>();
+        myCollection.SetItem(10);
+        myCollection.SetItem(7);
+        myCollection.SetItem(15);
+        myCollection.SetItem(9);
+        myCollection.SetItem(1);
+        myCollection.SetItem(2);
+        System.out.printf("current");
     }
 
 
