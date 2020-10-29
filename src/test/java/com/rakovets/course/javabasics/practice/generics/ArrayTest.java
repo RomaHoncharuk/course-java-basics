@@ -25,7 +25,7 @@ public class ArrayTest {
         myCollection.SetItem(9);
         myCollection.SetItem(1);
         myCollection.SetItem(2);
-        System.out.printf("current");
+        Assertions.assertEquals(1, myCollection.findMin());
     }
 
     @Test
@@ -37,7 +37,8 @@ public class ArrayTest {
         myCollection.SetItem(9);
         myCollection.SetItem(1);
         myCollection.SetItem(2);
-        System.out.printf("current");
+        Assertions.assertEquals(15, myCollection.findMax());
+
     }
 
 
