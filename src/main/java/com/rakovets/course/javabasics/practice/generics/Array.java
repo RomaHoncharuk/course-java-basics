@@ -56,19 +56,13 @@ public class Array <T extends Comparable<T>> {
         }
     }
 
-//    public T displayArray() {
+//        public  T displayArray() {
 //        T s = this.innerArray.get(0);
 //        for (int i = 1; i < this.innerArray.size(); i++) {
-//            s = s + this.innerArray.get(i);
+//            if
+//
 //        }
-//    }
-
-//    public String arrayToString() {
-//        String s = "";
-//        for (int i = 0; i < array.length; i++) {
-//            s = s + array[i];
-//        }
-//        return s;
+//        return this.innerArray();
 //    }
 
     public T findMin() {

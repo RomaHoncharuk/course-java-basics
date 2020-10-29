@@ -38,11 +38,7 @@ public class ArrayTest {
         myCollection.SetItem(1);
         myCollection.SetItem(2);
         Assertions.assertEquals(15, myCollection.findMax());
-
     }
-
-
-
 }
 
 
