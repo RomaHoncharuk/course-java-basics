@@ -4,15 +4,15 @@ import com.rakovets.course.javabasics.practice.exceptionhandling.exeption.Accoun
 
 public class AccountTask3 {
     private int damage;
-    private boolean stateHero;
+    private boolean heroNullPoint;
 
-    public AccountTask3 (int damage, boolean stateHero) {
+    public AccountTask3 (int damage, boolean heroNullPoint) {
         this.damage = damage;
-        this.stateHero = stateHero;
+        this.heroNullPoint = heroNullPoint;
     }
 
-    public void hitponsHero (int damage) throws AccountExeptions {
-        if (stateHero) {
+    public void hitpoinsHero (int damage) throws AccountExeptions {
+        if (heroNullPoint) {
             throw new AccountExeptions();
         }
         this.damage -= damage;
@@ -28,11 +28,11 @@ public class AccountTask3 {
     }
 
     public boolean getStateHero() {
-        return stateHero;
+        return heroNullPoint;
     }
 
     public void setStateHero(boolean stateHero) {
-        this.stateHero = stateHero;
+        this.heroNullPoint = heroNullPoint;
     }
 
 }
