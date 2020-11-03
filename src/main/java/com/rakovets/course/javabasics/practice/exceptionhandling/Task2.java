@@ -9,6 +9,5 @@ public class Task2 {
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Array is FULL");
         }
-
     }
 }

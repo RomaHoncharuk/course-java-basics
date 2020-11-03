@@ -8,8 +8,6 @@ public class Task1 {
             str.concat("9");
         } catch (NullPointerException e) {
             System.out.print("Not operation");
-
         }
-
     }
 }
